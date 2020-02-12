@@ -1,0 +1,179 @@
+* {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+}
+ #videoBG{
+     width:100%;
+     height: auto;
+}
+ .overlay {
+     position: absolute;
+     z-index:999;
+}
+ .overlay2 {
+     position: absolute;
+     top: 12%;
+     left: 40%;
+}
+ .column{
+     flex: 25%;
+     max-width: 1000px;
+     padding: 20px 4px;
+     /*margin-left: 60px;*/
+     display: block;
+}
+ .column img {
+     margin-top: 20px;
+     vertical-align: middle;
+     width: 300px;
+     height: 300px;
+}
+ .column2{
+     flex: 25%;
+     max-width: 1000px;
+     padding: 20px 4px;
+     margin-left: 2vh;
+     display: block;
+}
+ .form{
+     margin-top: 50px;
+}
+ .column2 img {
+     margin-top: 50px;
+     vertical-align: middle;
+     width: 450px;
+     height: 272px;
+}
+ .row {
+     display: flex;
+     flex-wrap: wrap;
+     padding: 0 4px;
+}
+
+ @media screen and (max-width: 800px) {
+     .column {
+         flex: 50%;
+         max-width: 50%;
+    }
+}
+
+ @media screen and (max-width: 600px) {
+     .column {
+         flex: 100%;
+         max-width: 100%;
+    }
+}
+ #opener{
+     width: auto;
+     height: auto;
+}
+ #ALBUMS{
+     background-color: #7be382;
+     display: flex;
+     padding: 0 4px;
+     height: auto;
+     width: 100%;
+     align-items: center;
+}
+ #ABOUTME{
+     margin-top: 5px;
+     background-color: #f8ed62;
+     height: auto;
+     width: 100%;
+}
+ .bio{
+     margin-top: 2vh;
+     width: 450px;
+     padding-bottom: 2vh;
+}
+ #FANS{
+     margin-top: 5px;
+     background-color: #92bbff;
+     height: auto;
+     padding: 20px;
+}
+ #FANS{
+     height: 100vh;
+     width:100%;
+}
+ #answerchoices{
+     display: none;
+     align-items: center;
+     margin: auto;
+}
+ #question{
+     text-align: center;
+     padding-top: 100px;
+     margin-bottom: 100px;
+     color: white;
+}
+ #reveal{
+     display: block;
+     margin: auto;
+     width: 100px;
+     height: 50px;
+     border-radius: 28px;
+}
+ #answerchoices button {
+     background-color: #fec0ff;
+     border: 1px solid white;
+     color: white;
+     padding: 10px 24px;
+     cursor: pointer;
+     width: 500px;
+     display: block;
+     margin: auto;
+}
+ #answerchoices button:not(:last-child) {
+     border-bottom: none;
+}
+ .btn-group button:hover {
+     background-color: #3e8e41;
+}
+ #n a {
+     color: white;
+     padding: 7px 15px;
+     text-decoration: none;
+     font-size: 30px;
+}
+ #n{
+     display: flex;
+     justify-content: flex-end;
+     z-index: 999;
+}
+ #subject{
+     width: 450px;
+     height: 200px;
+}
+ #name, #email{
+     width: 450px;
+     height: 30px;
+}
+
+.albumimg:hover{
+  transform: scale(1.1);
+}
+
+.heading{
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
